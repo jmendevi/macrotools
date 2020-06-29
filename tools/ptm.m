@@ -4,8 +4,8 @@ function pi = ptm(rho,rhoen);
 % Usage:
 %          pi = ptm(rho,rhoen)
 %
-% rho   : autocorrelation of shocks
-% rhoen : correlation between shocks
+% rho   : correlation between shocks
+% rhoen : autocorrelation of shocks
 
 pi    = [(1+rhoen)/4 0.5-(1+rhoen)/4 0.5-(1+rhoen)/4 (1+rhoen)/4];
 rho   = rho*ones(4,1);
